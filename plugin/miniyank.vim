@@ -27,6 +27,7 @@ if !has_key(g:,"miniyank_delete_maxlines")
 endif
 
 let g:miniyank_loop_cycle = get(g:, 'miniyank_loop_cycle', v:false)
+let g:miniyank_echo_position = get(g:, 'miniyank_echo_position', v:false)
 
 augroup MiniYank
     au! TextYankPost * call miniyank#on_yank(copy(v:event))

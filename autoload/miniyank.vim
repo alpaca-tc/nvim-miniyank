@@ -158,6 +158,10 @@ function! miniyank#cycle(dir) abort
 endfunction
 
 function! miniyank#do_putlist() abort
+    if g:miniyank_echo_position
+      echo "miniyank: (" . string(s:pos + 1) . "/" . string(len(s:pastelist)) . ")"
+    endif
+
     call miniyank#putreg(s:pastelist[s:pos],s:cmd)
     let s:changedtick = b:changedtick
 endfunction
