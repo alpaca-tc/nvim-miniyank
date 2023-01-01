@@ -78,4 +78,10 @@ Sigh, just why? Okay, do
 
     let g:miniyank_filename = $HOME."/.miniyank.mpack"
 
+## When you reach the end of register, do you want to repeat from the beginning?
+
+How about
+
+    let g:miniyank_loop_cycle = v:true
+
 
